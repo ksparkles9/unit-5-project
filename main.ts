@@ -1,3 +1,6 @@
+/**
+ * Have tile overlaps for certain blocks for Player 1 and Player 2
+ */
 let mySprite = sprites.create(img`
     . . . . . . . . . . . 6 6 6 6 6 
     . . . . . . . . . 6 6 7 7 7 7 8 
