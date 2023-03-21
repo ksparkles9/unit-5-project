@@ -42,3 +42,4 @@ tiles.placeOnRandomTile(mySprite, sprites.dungeon.darkGroundNorthWest1)
 tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundNorthWest1)
 scene.cameraFollowSprite(mySprite)
 scene.cameraFollowSprite(mySprite2)
+//javaScript
