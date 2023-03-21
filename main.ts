@@ -1,3 +1,6 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLadder, function (sprite, location) {
+    sprites.destroy(sprite)
+})
 // Have tile overlaps for certain blocks for Player 1 and Player 2.
 let mySprite = sprites.create(img`
     . . . . . . . . . . . 6 6 6 6 6 
@@ -34,12 +37,10 @@ let mySprite2 = sprites.create(img`
     . . e e b b 4 4 4 4 b e e . . . 
     . . . e e e e e e e e . . . . . 
     . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.Enemy)
 controller.player1.moveSprite(mySprite)
 controller.player2.moveSprite(mySprite2)
 tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(mySprite, sprites.dungeon.darkGroundNorthWest1)
 tiles.placeOnRandomTile(mySprite2, sprites.dungeon.darkGroundNorthWest1)
 scene.cameraFollowSprite(mySprite)
-scene.cameraFollowSprite(mySprite2)
-//javaScript
